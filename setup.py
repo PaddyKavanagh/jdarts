@@ -15,7 +15,7 @@ setup(
     name="jdarts",
     version=__version__,
     description="jdarts (JWST data analysis and reduction tools). A package for the analysis and reduction of JWST data.",
-    package=['jdarts'],
+    packages=['jdarts'],
     author="Patrick Kavanagh",
     author_email = "patrick.kavanagh@mu.ie",
     license = "See licence file",
