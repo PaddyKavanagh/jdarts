@@ -7,9 +7,7 @@ Setup file for installing the jdarts software
 try:
     from setuptools import setup
 except ImportError:
-    from ez_setup import use_setuptools
-    use_setuptools()
-    from setuptools import setup
+    raise ImportError("setuptools is required to install this package. You can install it with 'pip install setuptools'")
 
 __version__ = '0.1.0'
 
