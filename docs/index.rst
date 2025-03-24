@@ -1,5 +1,5 @@
 .. jdarts documentation master file, created by
-   sphinx-quickstart on Mon Mar 24 17:59:56 2025.
+   sphinx-quickstart on Mon Mar 24 18:17:49 2025.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
