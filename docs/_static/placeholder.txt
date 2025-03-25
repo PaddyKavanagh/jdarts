@@ -1,0 +1,1 @@
+Place to store static assets for documentation. (pdfs, .css, .js, images, etc.)
