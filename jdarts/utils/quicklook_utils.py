@@ -5,7 +5,10 @@
 #
 """
 This module contains functions to generate quicklook plots for JWST MIRI MRS data.
-It includes functions for plotting 1D spectra and 2D median images and velocity channel maps from MIRI datacubes.
+
+It includes functions for plotting 1D spectra from text files, 
+2D median images of MIRI data cubes, where the median is computed along the spectral axis, 
+and velocity channel maps from a MIRI data cube, where the user specifies the line rest wavelength and velocity range.
 
 """
 import os
@@ -39,7 +42,7 @@ def mrs_quicklook_fullband_spectra(spectra, plot_scale='linear', save_plot=False
     spectra : list of str
         A list of paths to the .txt files containing spectra.
     plot_scale : str, optional
-        The scaling of the plot. If 'linear', a linear scale is used for both axes.
+        The scaling of the plot. If set to 'linear', a linear scale is used for both axes.
         Any other value will result in a log-log scale. Defaults to 'linear'.
     save_plot : bool, optional
         If True, the plot is saved to a PNG file. Defaults to False.
@@ -79,7 +82,7 @@ def mrs_quicklook_fullband_spectra(spectra, plot_scale='linear', save_plot=False
 def mrs_quicklook_cubes(cubes, plot_scale='linear', save_plot=False,
                            output_filename='cubes_plot.png'):
     """
-    Generates a quicklook plot of median images from set of MIRI datacubes.
+    Generates a quicklook plot of median images computed from a set of MIRI data cubes.
     For each cube, it calculates the median along the spectral axis and displays
     the resulting 2D spatial image with a 1 arcsecond scale bar.
 
@@ -206,7 +209,7 @@ def wav_to_vel(wavelength, line_wavelength):
 def plot_channel_maps(cube, line_name, line_rest_wavelength, velocity_range, radial_vel=0,
                       plot_regions=False, region_file=None, save_plot=False, plot_name='channel_maps.png'):
     """
-    Plots velocity channel maps from a MIRI data cube around a specified rest wavelength. 
+    Plots a velocity channel map from a MIRI MRS data cube around a specified rest wavelength and velocity range. 
     Optionally plots a DS9 region on one of the maps.
 
     Parameters
