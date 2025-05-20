@@ -1,8 +1,9 @@
-jdarts.pipeline package
-=====================
+*****************
+Pipeline package
+*****************
 
 .. toctree::
    :maxdepth: 1
-
-    jd_detector1
+    
+   jd_detector1
   

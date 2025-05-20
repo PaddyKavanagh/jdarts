@@ -1,5 +1,6 @@
-jdarts.utils package
-=====================
+**************
+Utils package
+**************
 
 .. toctree::
    :maxdepth: 1

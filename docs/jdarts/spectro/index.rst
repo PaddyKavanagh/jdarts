@@ -1,5 +1,6 @@
-jdarts.spectro package
-=====================
+***************
+Spectro package
+***************
 
 .. toctree::
    :maxdepth: 1

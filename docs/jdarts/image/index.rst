@@ -1,5 +1,6 @@
-jdarts.image package
-=====================
+**************
+Image package
+**************
 
 .. toctree::
    :maxdepth: 1
