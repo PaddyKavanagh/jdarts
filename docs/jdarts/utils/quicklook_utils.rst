@@ -1,5 +1,5 @@
-jdarts.utils.quicklook_utils module
-===================================
+jdarts.utils.quicklook_utils
+============================
 
 .. automodule:: jdarts.utils.quicklook_utils
    :members:

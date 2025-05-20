@@ -1,6 +1,6 @@
-**************
-Image package
-**************
+*****
+Image
+*****
 
 .. toctree::
    :maxdepth: 1

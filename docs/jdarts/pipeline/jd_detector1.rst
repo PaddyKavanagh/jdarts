@@ -1,5 +1,5 @@
-jdarts.pipeline.jd_detector1 module
-===================================
+jdarts.pipeline.jd_detector1
+============================
 
 .. automodule:: jdarts.pipeline.jd_detector1
    :members:

@@ -1,6 +1,6 @@
-***************
-Spectro package
-***************
+*******
+Spectro
+*******
 
 .. toctree::
    :maxdepth: 1

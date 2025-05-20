@@ -1,6 +1,6 @@
-*****************
-Pipeline package
-*****************
+********
+Pipeline
+********
 
 .. toctree::
    :maxdepth: 1

@@ -1,6 +1,6 @@
-**************
-Utils package
-**************
+*****
+Utils
+*****
 
 .. toctree::
    :maxdepth: 1
