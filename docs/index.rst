@@ -10,7 +10,7 @@ JDARTS Documentation
 Introduction
 ============
 
-The *jdarts* (JWST Data Analysis and Reduction Tools) package is a Python library 
+The JDARTS (JWST Data Analysis and Reduction Tools) package is a Python library 
 for the data reduction and analysis of data from the James Webb Space Telescope (JWST).
 
 You can install *jdarts* with `pip <http://www.pip-installer.org/en/latest/>`_::
@@ -21,7 +21,7 @@ The sub-packages are:
    - **jdarts.pipeline**: Contains JWST pipeline data reduction scripts.
    - **jdarts.image**: Contains functions for image processing and analysis.
    - **jdarts.spectro**: Contains functions for spectroscopic processing and analysis.
-   - **jdarts.utils**: Contains shared utility functions.
+   - **jdarts.utils**: Contains general utility functions.
 
 .. toctree::
    :maxdepth: 2
