@@ -1,3 +1,9 @@
 sphinx
 sphinx-rtd-theme
 numpy
+matplotlib
+jwst
+scipy
+astropy
+pandas
+pytest
