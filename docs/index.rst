@@ -15,8 +15,15 @@ for the data reduction and analysis of data from the James Webb Space Telescope 
 
 You can install *jdarts* with `pip <http://www.pip-installer.org/en/latest/>`_::
 
-Contents
---------
+The structure of the package is as follows:
+
+   The package is organized into several sub-packages, each with its own set of modules containing functions.
+   The sub-packages are:
+
+   - **jdarts.pipeline**: Contains JWST pipeline data reduction scripts.
+   - **jdarts.image**: Contains functions for image processing and analysis.
+   - **jdarts.spectro**: Contains functions for spectroscopic processing and analysis.
+   - **jdarts.utils**: Contains shared utility functions.
 
 .. toctree::
    :maxdepth: 2
@@ -28,9 +35,9 @@ Contents
    jdarts/utils/index
    
 
-Indices and tables
-==================
+   Indices and tables
+   ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
