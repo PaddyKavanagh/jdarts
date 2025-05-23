@@ -8,8 +8,8 @@
 JDarts tools for running the JWST Detector1Pipeline. 
 
 This modules provides a wrapper around the JWST `Detector1Pipeline`, (Stage 1 Detector processing).
-It processes raw detector-level integrations (`*_uncal.fits`) from JWST
-into corrected countrate (slope) images (`*_rate.fits`), suitable for Stage 2 processing.
+It processes raw detector-level integrations (`_uncal.fits`) from JWST
+into corrected countrate (slope) images (`_rate.fits`), suitable for Stage 2 processing.
 
 This tool simplifies batch processing and allows optional step overrides, including
 multiprocessing configuration.
@@ -26,7 +26,7 @@ multiprocessing configuration.
     - CRDS_CONTEXT (must be configured depending on reference file versioning)
 
 :Inputs:
-    - A directory containing *_uncal.fits files, or a list of raw detector files.
+    - A directory containing _uncal.fits files, or a list of raw detector files.
 
 :Outputs:
     - Calibrated JWST Level 1b products in the specified or default output directory.
@@ -62,13 +62,13 @@ class JDartsDet1:
     A wrapper class for the JWST Detector1Pipeline.
 
     This class simplifies the use of the JWST Detector1Pipeline by enabling batch
-    processing of *_uncal.fits files from JWST instruments. It allows step-specific
+    processing of _uncal.fits files from JWST instruments. It allows step-specific
     configuration and multiprocessing for efficient pipeline execution
 
     Parameters
     ----------
     input: str or list, required
-        Path to a directory containing `*_uncal.fits` files, or a list of input files.
+        Path to a directory containing `_uncal.fits` files, or a list of input files.
 
     output_dir: str, optional
         Directory to save output files. Defaults to location of input files.
@@ -104,13 +104,13 @@ class JDartsDet1:
     def _check_input(self, input):
         """
         Check if the input is a directory or a list of files. If it's a directory,
-        check if it contains any `*_uncal.fits` files. If it's a list, check if it
-        contains any `*_uncal.fits` files. If not, raise an error.
+        check if it contains any `_uncal.fits` files. If it's a list, check if it
+        contains any `_uncal.fits` files. If not, raise an error.
 
         Parameters
         ----------
         input : str or list
-            Path to directory or list of `*_uncal.fits` files.
+            Path to directory or list of `_uncal.fits` files.
 
         Returns
         -------
@@ -170,7 +170,7 @@ class JDartsDet1:
 
         Outputs
         -------
-        Saves calibrated files (e.g., *_rate.fits, *_rateints.fits) in the specified output directory.
+        Saves calibrated files (e.g., _rate.fits, _rateints.fits) in the specified output directory.
         """
         if step_dict is None:
             step_dict = self.create_step_overrides()
